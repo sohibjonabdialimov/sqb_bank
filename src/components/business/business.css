@@ -1,0 +1,65 @@
+.business_grid_wrap {
+  display: grid;
+  row-gap: 18px;
+  grid-template-areas:
+    "one two three four"
+    "one five three six";
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  background-color: #f2f5f8;
+  width: 270px;
+  border-radius: 10px;
+  position: relative;
+  padding: 22px 24px 25px 22px;
+}
+.one {
+  grid-area: one;
+}
+.one img{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.two {
+  grid-area: two;
+  height: 276px;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+  height: 276px;
+}
+.five {
+  grid-area: five;
+  height: 276px;
+}
+.six {
+  grid-area: six;
+  height: 276px;
+}
+.business_absolute{
+  position: absolute;
+  bottom: 20px;
+}
+.business_content_wrap h3{
+  color: #0A1E32;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 6px;
+}
+.business_content_wrap p{
+  color: #0A1E3299;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  margin-right: 30px;
+}
